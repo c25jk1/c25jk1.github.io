@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
 	<title></title>
+	<style type="text/css">
+		.puck{
+			width: 100px;
+			height: 100px;
+			background-image: url(https://www.switsport.com/wp-content/uploads/2020/12/Seattle-Kraken-Stitch-Hockey-Puck-324x324.png);
+			background-size: cover;
+			display: inline-block;
+		}
 
-<style type="text/css">
-	.jack{
-		width: 100px;
-		height: 100px;
-		background-image: url(jack.png);
-		background-size: cover;
-		display: inline-block;
+		.puck:hover{
+			background-color: darkred;
+			transition: 1.5s;
+		}
 
-	}
-
-</style>
+	</style>
 
 </head>
 <body>
 
-<div class="jack"></div>
+	<script type="text/javascript">
+		
+		function make_puck () {
+		let kraken = document.createElement("div");
+			document.body.appendChild(kraken);
+			kraken.classList.add("puck") 
+			}
+
+		setInterval(make_puck, 300)
+
+
+
+		
+
+	</script>
+
 
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		#nhl{
+			height: 100px;
+			width: 100px;
+			background-image: url(https://upload.wikimedia.org/wikipedia/en/3/3a/05_NHL_Shield.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="nhl"></div>
+
+	<script type="text/javascript">
+		document.addEventListener("click", function makeLogo(event){
+		nhl.style.left = event.clientX
+
+		console.log(event.clientX);
+		console.log(event.clientY);
+		})
+
+	</script>
+
+</body>
+</html>
