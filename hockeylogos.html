@@ -6,7 +6,7 @@
 		#nhl{
 			height: 100px;
 			width: 100px;
-			background-image: url(https://upload.wikimedia.org/wikipedia/en/3/3a/05_NHL_Shield.svg);
+			background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/NHL_Logo_former.svg/1200px-NHL_Logo_former.svg.png);
 			background-size: contain;
 			background-repeat: no-repeat;
 			position: absolute;
@@ -21,10 +21,14 @@
 
 	<script type="text/javascript">
 		document.addEventListener("click", function makeLogo(event){
-		nhl.style.left = event.clientX
+		
+		nhl.style.left = event.clientX -45 + "px";
+		nhl.style.top = event.clientY -50 +  "px"
+		nhl.style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/en/3/3a/05_NHL_Shield.svg)"
 
 		console.log(event.clientX);
 		console.log(event.clientY);
+
 		})
 
 	</script>
