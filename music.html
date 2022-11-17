@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<!-- 	Our stratagy for doing different thingd on every other click:
+	1. count clicks store in variable
+	2. even click do one thing
+	3. odd click do annother thing -->
+
+<script type="text/javascript">
+	
+	let counter = 0
+
+	document.addEventListener("click",
+		function(){
+		counter = counter + 1
+		console.log(counter)
+
+		if (counter%2==0) {
+			document.body.style.
+				backgroundColor="GhostWhite"
+				backgroundImage= url("https://1000logos.net/wp-content/uploads/2021/05/ESPN-logo.png")
+		}
+
+		if (counter%2==1) {
+			document.body.style.
+				backgroundColor="LightBlue"
+		}
+
+
+		})
+
+	// Notes:
+	// % = modulo = remainder
+
+</script>
+
+</body>
+</html>
