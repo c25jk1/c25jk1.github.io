@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#textthing{
+			height: 200;
+			width: 1000;
+			font-size: 100px;
+			font-family: cursive;
+			color: cadetblue;
+		}
+		#textthing2{
+			height: 100;
+			width: 500;
+			font-size: 50px;
+			font-family: cursive;
+			color: cadetblue;
+
+		}
+
+		#cal{
+			height: 500px;
+			width: 500px;
+			background-image: url(jcal.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="textthing">Love you little bro</div>
+	<div id="textthing2">Click around for Cal</div>
+	<div id="cal"></div>
+
+	<script type="text/javascript">
+		document.addEventListener("click", function makeLogo(event){
+		
+		cal.style.left = event.clientX -250 + "px";
+		cal.style.top = event.clientY -250 +  "px"
+		cal.style.backgroundImage = "url(cal.png)"
+
+		console.log(event.clientX);
+		console.log(event.clientY);
+
+		})
+
+	</script>
+
+</body>
+</html>
