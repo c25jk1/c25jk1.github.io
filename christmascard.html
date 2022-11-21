@@ -1,0 +1,45 @@
+=<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#front{
+			height: 400px;
+			width: 400px;
+			background-image: url(https://cdn.paperdirect.com/-/media/Products/pd/greeting-cards/christmas/classic-christmas-greeting-cards/hg1012-happy-holiday-snowflake-holiday-greeting-cards-000.ashx);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			font-size: 50px;
+			font-family: cursive;
+			color: skyblue;
+		}
+		
+	</style>
+
+
+</head>
+<body>
+	<div id="background">
+	<div id="front">
+	</div></div>
+	<audio id="song" src=""></audio>
+
+	<script type="text/javascript">
+		document.addEventListener("click", function makeLogo(event){
+		
+		front.style.left = event.clientX -45 + "px";
+		front.style.top = event.clientY -50 +  "px"
+		front.style.backgroundImage = "url(https://cdn.unifiedcommerce.com/content/product/large/796780500419.jpg)"
+
+		console.log(event.clientX);
+		console.log(event.clientY); 
+
+
+		})
+
+	</script>
+
+
+
+</body>
+</html>

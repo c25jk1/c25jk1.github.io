@@ -1,4 +1,4 @@
-
+c
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +12,8 @@
 	2. even click do one thing
 	3. odd click do annother thing -->
 
+<audio id="song" src=""></audio>
+
 <script type="text/javascript">
 	
 	let counter = 0
@@ -23,11 +25,13 @@
 
 		if (counter%2==0) {
 			document.body.style.
+			song.pause();
 				backgroundColor="GhostWhite"
 				backgroundImage= url("https://1000logos.net/wp-content/uploads/2021/05/ESPN-logo.png")
 		}
 
 		if (counter%2==1) {
+			song.play();
 			document.body.style.
 				backgroundColor="LightBlue"
 		}
