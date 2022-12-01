@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nyc Cyclones Xmas</title>
+    <style>
+        
+        h1{
+            font-family: cursive;
+            font-size:50px;
+            color:darkred;
+        }
+
+        
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            margin: 10px;
+            background-repeat: no-repeat;
+            border: 1px;
+            background-color: black;
+            background-size: cover;
+        }
+
+        #square0{
+           height: 100px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- <h1> Merry Christmas Cyclones! <h1> -->
+
+<br><br>
+
+<script type="text/javascript">
+
+//For all of your media, to use this, label each file  with numbers (eg.1.jpg, 2.jpg) and keep them in the same folder as this html file. If they are not jpgs, change the extension "jpg" in the recipe below (line 25) to whatever file type they are.  
+
+//Below is the recipe to make the squares appear on the page//
+    
+    function makeSquare (x) {
+
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+            // square.style.width = "200px";
+            // square.style.height = "200px";
+            // square.style.display = "inline-block";
+            // square.style.margin = "10px";
+            // square.style.backgroundRepeat = "no-repeat";
+            // square.style.border = "1px";
+            // square.style.backgroundColor = "cadetBlue";
+
+            square.classList.add("box");
+
+            square.style.backgroundImage = "url(" + x + ".jpg)";
+
+            square.style.backgroundSize = "cover";
+            square.id = "square" + x;};
+
+
+// //Below, is the for loop in which where the squares are actually made. This for loop is where the function above is actually called. It is called 14 times, (between the values of 0 and 15) and because the variable i is declared in the for loop and is then being passed to the makeSquare recipe, each time the function runs, i changes in value (+1). Thus, the attributes that involve the i change in value as well (eg. the id attribute changes to be whatever i was last time, plus 1.)//
+// "i++" is the same as i = i +1
+
+
+    for (var i = 0; i < 18; i++) 
+    { makeSquare(i);}
+
+</script>
+</body>
+</html>
