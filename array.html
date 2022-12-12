@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>16u Girls Line Maker</title>
+	<style type="text/css">
+		h1{
+			font-size: 50px;
+			font-family: initial;
+		}
+		.player1{
+			height: 200px;
+			width: 300px;
+			background-color: navy;
+			display: inline-block;
+			margin:10px;
+			font-size: 30px;
+			font-family: initial;
+			color: ghostwhite;
+			padding-top: 100px;
+
+		}
+		.player2{
+			height: 200px;
+			width: 300px;
+			background-color: darkred;
+			display: inline-block;
+			margin:10px;
+			font-size: 30px;
+			font-family: initial;
+			color: ghostwhite;
+			padding-top: 100px;
+	
+		}
+
+		.player3{
+			height: 200px;
+			width: 300px;
+			background-color: navy;
+			display: inline-block;
+			margin:10px;
+			font-size: 30px;
+			font-family: initial;
+			color: ghostwhite;
+			padding-top: 100px;
+		
+	
+		}
+
+		.text{
+			margin-top: 25px;
+			position:absolute;
+			width:300px;
+			background-position:center;
+			text-align:center;
+		}
+
+	</style>
+</head>
+<body>
+	<center><h1>Want to create a team? Click around to choose your players!</h1></center>
+<center>
+	<div id="lw" class="player1">
+		<div class="text" id="textlw"></div>
+	</div>
+	<div id="c" class="player1">
+		<div class="text" id="textc"></div>
+	</div>
+	<div id="rw" class="player1">
+		<div class="text" id="textrw"></div>
+	</div>
+</center>
+	<br>
+<center>
+	<div id="ld" class="player2">
+		<div class="text" id="textld"></div>
+	</div>
+	<div id="rd" class="player2">
+		<div class="text" id="textrd"></div>
+	</div>
+</center>
+<br>
+	<center>
+		<div id="g" class="player3">
+			<div class="text" id="textg"></div>
+		</div>
+	</center>
+
+<script type="text/javascript">
+	var leftwing = [
+		"Hannah Dooley",
+		"Olga Lobaczewski",
+		"Ella Eisenberg",
+		"Simon McGann",
+		"Dani Levitt",
+		"Hailey Mesard",
+		"Jane Rosenthal",
+		"Gaia Wolski",]
+	lw.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*7);
+
+		textlw.innerText = (leftwing[randomNumber]);
+		// lw.style.backgroundImage = "url("" + leftwing)"
+
+		console.log(randomNumber)
+	})
+
+	var rightwing = [
+		"Hannah Dooley",
+		"Olga Lobaczewski",
+		"Ella Eisenberg",
+		"Simon McGann",
+		"Dani Levitt",
+		"Hailey Mesard",
+		"Jane Rosenthal",
+		"Gaia Wolski",]
+
+	rw.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*7);
+
+		textrw.innerText = (rightwing[randomNumber]);
+		// lw.style.backgroundImage = "url("" + rightwing)"
+
+		console.log(randomNumber)
+	})
+
+	var center = [
+		"Eden Holden",
+		"Izzy Kim",]
+	c.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*1);
+
+		textc.innerText = (center[randomNumber]);
+		// lw.style.backgroundImage = "url("" + center)"
+
+		console.log(randomNumber)
+	})
+
+
+	var leftdefense = [
+		"Josie Kim",
+		"Reese Herringer",
+		"Morgan Momen",
+		"Tory Doft",]
+	ld.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*3);
+
+		textld.innerText = (leftdefense[randomNumber]);
+		// lw.style.backgroundImage = "url("" + leftdefense)"
+
+		console.log(randomNumber)
+	})
+
+	var rightdefense = [
+		"Josie Kim",
+		"Reese Herringer",
+		"Maeve Collins",]
+	rd.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*2);
+
+		textrd.innerText = (rightdefense[randomNumber]);
+		// lw.style.backgroundImage = "url("" + rightdefense)"
+
+		console.log(randomNumber)
+	})
+	
+var goalie = [
+		"Giana Bizzarro",]
+	g.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*0);
+
+		textg.innerText = (goalie[randomNumber]);
+		// lw.style.backgroundImage = "url("" + goalie)"
+
+		console.log(randomNumber)
+	})
+
+
+
+
+	
+</script>
+
+
+</body>
+</html>

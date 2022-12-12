@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        h1{
+            font-family:cursive;
+            font-size:50px;
+            color:darkred;
+        }
+
+        #square0{
+           background-color: lightblue;
+        }
+        #square1{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<h1> Merry Christmas New York City Cyclones! <h1>
+
+
+<script type="text/javascript">
+
+
+    function makeSquare (x) {
+
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+            square.style.width = "250px";
+            square.style.height = "250px";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            square.style.backgroundColor = "black";
+            square.style.backgroundSize = "contain";
+            square.style.id = "square" + x;};
+
+    for (var i = 0; i < 2; i++) 
+    { makeSquare(i);}
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cyclones 14u</title>
+	<style type="text/css">
+		h1{
+			font-size: 50px;
+			font-family: initial;
+		}
+		.player1{
+			height: 200px;
+			width: 300px;
+			background-color: navy;
+			display: inline-block;
+			margin:10px;
+			font-size: 30px;
+			font-family: initial;
+			color: ghostwhite;
+			padding-top: 100px;
+
+		}
+		.player2{
+			height: 200px;
+			width: 300px;
+			background-color: darkred;
+			display: inline-block;
+			margin:10px;
+			font-size: 30px;
+			font-family: initial;
+			color: ghostwhite;
+			padding-top: 100px;
+
+	
+		}
+
+		.player3{
+			height: 200px;
+			width: 300px;
+			background-color: navy;
+			display: inline-block;
+			margin:10px;
+			font-size: 30px;
+			font-family: initial;
+			color: ghostwhite;
+			padding-top: 100px;
+		
+	
+		}
+
+		.text{
+			margin-top: 25px;
+			position:absolute;
+			width:300px;
+			background-position:center;
+			text-align:center;
+		}
+
+	</style>
+</head>
+<body>
+	<center><h1>Want to create a team? Click around to choose your players!</h1></center>
+<center>
+	<div id="lw" class="player1">
+		<div class="text" id="textlw"></div>
+	</div>
+	<div id="c" class="player1">
+		<div class="text" id="textc"></div>
+	</div>
+	<div id="rw" class="player1">
+		<div class="text" id="textrw"></div>
+	</div>
+</center>
+	<br>
+<center>
+	<div id="ld" class="player2">
+		<div class="text" id="textld"></div>
+	</div>
+	<div id="rd" class="player2">
+		<div class="text" id="textrd"></div>
+	</div>
+</center>
+	<br>
+	<center>
+		<div id="g" class="player3">
+			<div class="text" id="textg"></div>
+		</div>
+	</center>
+
+
+<script type="text/javascript">
+	var leftwing = [
+		"Vince Fandozzi",
+		"Aiden Eisenberg",
+		"Theo Cacciaelli",
+		"Alex Ausiello",
+		"Charlie Johnson",
+		"Theo Shin",
+		"Cedric Tulloch",
+		]
+	lw.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*6);
+
+		textlw.innerText = (leftwing[randomNumber]);
+		// lw.style.backgroundImage = "url("" + leftwing)"
+
+		console.log(randomNumber)
+	})
+
+	var rightwing = [
+		"Vince Fandozzi",
+		"Aiden Eisenberg",
+		"Theo Cacciaelli",
+		"Alex Ausiello",
+		"Charlie Johnson",
+		"Theo Shin",
+		"Cedric Tulloch",
+		]
+
+	rw.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*6);
+
+		textrw.innerText = (rightwing[randomNumber]);
+		// lw.style.backgroundImage = "url("" + rightwing)"
+
+		console.log(randomNumber)
+	})
+
+	var center = [
+		"Nick Ferrara",
+		"Eddy Ruess",
+		"Jordan Shapiro",]
+	c.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*2);
+
+		textc.innerText = (center[randomNumber]);
+		// lw.style.backgroundImage = "url("" + center)"
+
+		console.log(randomNumber)
+	})
+
+
+	var leftdefense = [
+		"Bruno Ratzan",
+		"Daniel Yoshikawa",
+		"Han Lane",
+		"Kaya Lane",
+		"Max Zygmanski",
+		"Pierce Evans",]
+	ld.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*5);
+
+		textld.innerText = (leftdefense[randomNumber]);
+		// lw.style.backgroundImage = "url("" + leftdefense)"
+
+		console.log(randomNumber)
+	})
+
+	var rightdefense = [
+		"Bruno Ratzan",
+		"Daniel Yoshikawa",
+		"Han Lane",
+		"Kaya Lane",
+		"Max Zygmanski",
+		"Pierce Evans",]
+	rd.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*5);
+
+		textrd.innerText = (rightdefense[randomNumber]);
+		// lw.style.backgroundImage = "url("" + rightdefense)"
+
+		console.log(randomNumber)
+	})
+	
+	var goalie = [
+		"Louisa Huston",
+		"Leo Zell",]
+	g.addEventListener("click", function(){
+		var randomNumber = Math.round(Math.random()*1);
+
+		textg.innerText = (goalie[randomNumber]);
+		// lw.style.backgroundImage = "url("" + goalie)"
+
+		console.log(randomNumber)
+	})
+
+
+
+
+	
+</script>
+
+
+</body>
+</html>
