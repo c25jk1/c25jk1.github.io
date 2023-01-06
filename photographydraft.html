@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Josie's Photography</title>
+
+	<style type="text/css">
+	
+#journal{
+	width: 40vw;
+	height: 4vw;
+	font-size: 3.75vw;
+	color: black;
+	text-align: center;
+	text-decoration: underline;
+}
+.squares{
+	width:13vw;
+	height:8.5vw;
+	margin:1.58vw;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body{
+	background-color: ghostwhite;	
+}
+#box{
+	width: 36vw;
+	height: 24vw;
+	border-style: solid;
+	border-width: .1vw;
+	border-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 3vw;
+	margin-top: 3vw;
+}
+.text{
+	position: relative;
+	top: 47.5%;
+	color: black;
+	text-align: center;
+	font-size: 1.1vw;
+	z-index: -1;
+}
+	</style>
+</head>
+<body>
+
+<center>
+<div id="journal"> Josie's Photography</div>
+<div id="box">
+	<div class="text">select a photo</div>
+</div>
+</center>
+
+<script type="text/javascript">
+
+	var counter = -1;
+
+	var box = document.getElementById('box');
+
+	function makeSquare (input){
+		var square = document.createElement("div");
+		document.body.appendChild(square);
+		square.style.backgroundImage = "url(./portfolio/"+input+".jpg)"
+		square.classList.add("squares");
+
+		square.addEventListener("click", function () {
+
+			box.style.backgroundImage = square.style.backgroundImage;
+		})
+	}
+
+	for(var i=1; i<31; i=i+1){
+		makeSquare(i);
+	}
+
+</script>
+</body>
+</html>
