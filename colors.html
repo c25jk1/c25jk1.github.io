@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>colors</title>
+	<style type="text/css">
+		body{
+			background-color: rgb(190,184,230);
+		}
+		#box{
+			height: 200px;
+			width: 400px;
+		}
+
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		document.addEventListener("mousemove",
+			function(){
+				document.body.style.
+				backgroundColor="rgb("+ event.clientX +",0,"+event.clientY+")";
+	
+
+			})
+		// document.body.style.
+		// 	backgroundColor="rgb(0,"+ event.clientX +","event.clientY+")";
+	</script>
+</body>
+</html>

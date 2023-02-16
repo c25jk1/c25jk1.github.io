@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about me</title>
+
+	<style type="text/css">
+
+body{background-color: #ghostwhite;	}
+
+#portrait1{
+	height: 220px;
+	width: 200px;
+	background-color: black;
+}
+
+	</style>
+</head>
+<body>
+
+<center>
+	<div id="portrait1"></div>
+	<div id="portrait2"></div>
+
+</center>
+
+</body>
+</html>
