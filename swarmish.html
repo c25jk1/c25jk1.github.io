@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.bug{
+			width: 340px;
+			height: 190px;
+			background-image: url("https://content.sportslogos.net/logos/1/19/full/new_york_islanders_logo_anniversary_2023_sportslogosnet-5405.png");
+			background-size: contain;
+			background-repeat: none;
+			position: absolute;
+			transition: 1s;
+		}
+	</style>
+
+</head>
+<body>
+	<script type="text/javascript">
+		function ladybugs (){
+			var bug = document.createElement("div");
+			document.body.appendChild(bug);
+			bug.classList.add('bug') 
+
+			function randomPosition (){
+					bug.style.left = Math.random ()* 1100 + "px"
+			bug.style.top = Math.random ()* 640 + "px"
+
+			}
+
+		setInterval(randomPosition, 500)
+
+		}
+
+		for(var i=0; i<8; i=i+1){
+			ladybugs()
+		}
+
+	
+
+
+	
+		
+	</script>
+
+</body>
+</html>
